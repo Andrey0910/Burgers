@@ -1,0 +1,22 @@
+.conteiner--comments{
+    width: 1000px;
+}
+.comments__content{
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.comments__content__item{
+    height: 325px;
+}
+
+.comments-img{
+    width: 250px;
+    height: 325px;
+}
