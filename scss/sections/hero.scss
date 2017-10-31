@@ -18,16 +18,16 @@
     margin-right: auto;
 }
 
-.nav{
+.header__menu{
     margin-right: rem(15px);
 }
 
-.nav__list{
+.header__menu__list{
     margin: 0;
     padding: 0;
 }
 
-.nav__item{
+.header__menu__list__item{
     display: inline-block;
     vertical-align: middle;
     white-space: nowrap;
@@ -43,7 +43,7 @@
     }
 }
 
-.nav__link{
+.header__menu__list__item__link{
     color: #ffffff;
     font-size: 13px;
     font-weight: 500;
@@ -84,12 +84,12 @@
     padding-bottom: 15%;
   }
 
-  .hero__description {
+  .hero__content__description {
     flex-direction: column;
     justify-content: center;
   }
 
-  .section__title {
+  .hero__content__description__title {
     color: #f9b43b;
     font-family: 'gagalinregular';
     font-size: 72px;
@@ -98,7 +98,7 @@
     padding-top: 60px;
   }
 
-  .hero__description-text {
+  .hero__content__description__text {
     color: #ffffff;
     font-family: 'lifehackmedium';
     font-size: 65px;

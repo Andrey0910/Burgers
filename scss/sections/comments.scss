@@ -1,6 +1,3 @@
-.conteiner--comments{
-    width: 1000px;
-}
 .comments__content{
     margin: 0;
     padding: 0;
@@ -13,10 +10,11 @@
 }
 
 .comments__content__item{
-    height: 325px;
+    width: 25%;
+    height: 50%;
 }
 
-.comments-img{
-    width: 250px;
-    height: 325px;
+.comments__content__item__img{
+    width: 100%;
+    height: 100%;
 }
