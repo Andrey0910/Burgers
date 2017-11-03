@@ -1,35 +1,31 @@
 .best {
+    height: 100vh;
     background-image: url('../img/bg/best-bg.png');
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
+    overflow: hidden;
+    position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.container{
-    // width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.section__title--best {
+.container__best__title{
+    font-size: 72px;
+    line-height: 64px;
+    font-family: 'gagalin';
+    padding-top: 80px;
+    margin: 0 auto;
+    text-align: center;
     color: #2f3234;
-    padding: 0;
-    margin-bottom: rem(60px);
-    margin-top: rem(80px);
 }
 
 .best__content{
-    //   width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+    margin-top: 90px;
 }
 
 .best__content__item{
@@ -38,6 +34,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    margin-left: 40px;
 }
 
 .best__content__item__img{
@@ -74,15 +71,4 @@
     width: 88px;
     height: 75px;
     background: url("../img/content/natural.png") center center no-repeat;
-}
-
-.best__content__item__title--meat{
-    margin-bottom: rem(12px);
-}
-.best__content__item__title--hand{
-    margin-bottom: rem(15px);
-}
-
-.best__content__item__title--natural{
-    margin-bottom: rem(10px);
 }

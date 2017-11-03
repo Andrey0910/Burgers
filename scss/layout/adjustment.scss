@@ -2,6 +2,7 @@
     width: 100%;
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .maincontent{
@@ -40,4 +41,22 @@
     &:hover{
         background-color: darken($orange, 7%);
     }
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 20%;
+    left: 95%;
+    cursor: pointer;
+}
+
+.nav__item{
+    width: 17px;
+    height: 17px;
+
+    margin-top: 17px;
+    
+    @include circle(6px, #fff);
 }
