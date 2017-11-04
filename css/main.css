@@ -320,80 +320,71 @@ ul {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
-
-.container__best__title {
-  font-size: 72px;
-  line-height: 64px;
-  font-family: 'gagalin';
-  padding-top: 80px;
-  margin: 0 auto;
-  text-align: center;
-  color: #2f3234; }
-
-.best__content {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin-top: 90px; }
-
-.best__content__item {
-  width: 18.75rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: 40px; }
-
-.best__content__item__img {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  margin-bottom: 29px; }
-
-.best__content__item__title {
-  font-family: "lifehackmedium";
-  font-size: 24.1px;
-  text-align: center; }
-
-.best__content__item__text {
-  font-family: "ubuntulight";
-  font-weight: 300;
-  font-size: 14px;
-  text-align: center; }
-
-.best__content__item__img--meat {
-  width: 97px;
-  height: 89px;
-  background: url("../img/content/meat.png") center center no-repeat; }
-
-.best__content__item__img--hand {
-  width: 73px;
-  height: 85px;
-  background: url("../img/content/hand.png") center center no-repeat; }
-
-.best__content__item__img--natural {
-  width: 88px;
-  height: 75px;
-  background: url("../img/content/natural.png") center center no-repeat; }
+  .best__title {
+    font-size: 72px;
+    line-height: 64px;
+    font-family: 'gagalin';
+    padding-top: 80px;
+    margin: 0 auto;
+    text-align: center;
+    color: #2f3234; }
+  .best__content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-top: 90px; }
+    .best__content__item {
+      width: 18.75rem;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-left: 40px; }
+      .best__content__item__img {
+        -webkit-align-self: center;
+        -ms-flex-item-align: center;
+        align-self: center;
+        margin-bottom: 29px; }
+      .best__content__item__img--meat {
+        width: 97px;
+        height: 89px;
+        background: url("../img/content/meat.png") center center no-repeat; }
+      .best__content__item__img--hand {
+        width: 73px;
+        height: 85px;
+        background: url("../img/content/hand.png") center center no-repeat; }
+      .best__content__item__img--natural {
+        width: 88px;
+        height: 75px;
+        background: url("../img/content/natural.png") center center no-repeat; }
+      .best__content__item span {
+        font-family: "lifehackmedium";
+        font-size: 24.1px;
+        text-align: center; }
+      .best__content__item p {
+        font-family: "ubuntulight";
+        font-weight: 300;
+        font-size: 14px;
+        text-align: center; }
 
 .comments__content {
   display: -webkit-box;
