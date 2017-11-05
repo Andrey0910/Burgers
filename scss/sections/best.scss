@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
 
-    &__title{
+    .best__title{
         font-size: 72px;
         line-height: 64px;
         font-family: 'gagalin';
@@ -21,12 +21,12 @@
         color: #2f3234;
     }
 
-    &__content{
+    .best__content{
         display: flex;
         flex-direction: row;
         margin-top: 90px;
 
-        &__item{
+        .best__item{
             width: rem(300px);
             display: flex;
             flex-direction: column;
@@ -34,24 +34,24 @@
             align-items: center;
             margin-left: 40px;
 
-            &__img{
+            .best__img{
                 align-self: center;
                 margin-bottom: 29px;
             }
 
-            &__img--meat{
+            .best__img_meat{
                 width: 97px;
                 height: 89px;
                 background: url("../img/content/meat.png") center center no-repeat;
             }
 
-            &__img--hand{
+            .best__img_hand{
                 width: 73px;
                 height: 85px;
                 background: url("../img/content/hand.png") center center no-repeat;
             }
 
-            &__img--natural{
+            .best__img_natural{
                 width: 88px;
                 height: 75px;
                 background: url("../img/content/natural.png") center center no-repeat;
