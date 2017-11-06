@@ -1,0 +1,13 @@
+.order{
+    background: url("../img/bg/order-bg.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.order__title{
+    color: $yellow;
+    font-size: 72px;
+    font-family: "gagalinregular";
+    margin-top: 90px;
+    margin-bottom: 70px;
+}

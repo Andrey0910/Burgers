@@ -1,0 +1,23 @@
+.menu{
+    background: url("../img/bg/menu-bg.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.menu__title{
+    color: #fff;
+    font-size: 72px;
+    font-family: "gagalinregular";
+    position: absolute;
+    top: 110px;
+    left: 90px;
+}
+
+.menu__content{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 25%;
+    background: rgba(#2e3133, 0.7);
+}

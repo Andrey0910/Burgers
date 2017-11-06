@@ -5,25 +5,25 @@
     background-position: 50%;
     position: relative;
 
-    .hero__header{
+    .header{
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-top: 10px;
 
-        .hero__header-logo{
+        .header__logo{
             margin-right: auto;
         }
 
-        .hero__header-menu{
+        .header-nav{
             margin-right: rem(15px);
 
-            .hero__header-list{
+            .header-nav__list{
                 margin: 0;
                 padding: 0;
 
-                .hero__header-item{
+                .header-nav__item{
                     display: inline-block;
                     vertical-align: middle;
                     white-space: nowrap;
@@ -38,7 +38,7 @@
                         display: none;
                     }
 
-                    .hero__header-link{
+                    .header-nav__link{
                         color: #ffffff;
                         font-size: 13px;
                         font-weight: 500;
@@ -56,7 +56,7 @@
             }
         }
 
-        .hero__header-btn-order-link{
+        .header__btn-order-link{
             min-width: rem(98px);
             padding: 10px 17px;
             border-radius: 5px;

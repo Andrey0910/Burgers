@@ -1,0 +1,67 @@
+.team{
+    background: url("../img/bg/team-bg.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.team__conteiner{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    background: rgba(#2e3133, 0.7);
+    padding-left: 70px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+}
+
+.team__title{
+    color: $yellow;
+    font-size: 72px;
+    font-family: "gagalinregular";
+    margin-bottom: 80px;
+}
+
+.team-acco__trigger{
+    color: #fff;
+    display: flex;
+    align-items: center;
+
+    &::before{
+        content: "";
+        height: 0;
+        width: 0;
+        border: 9px solid transparent;
+        border-top-color: $yellow;
+        border-bottom-width: 0;
+    }
+}
+
+.team-acco__content{
+    display: flex;
+    display: none;
+}
+
+.team-acco__pic-img{
+    border-radius: 50%;
+}
+
+.team-acco__text{
+    color: #fff;
+}
+
+.team-acco__item_activ{
+    .team-acco__trigger{
+        color: $yellow;
+
+        &::before{
+            transform: rotate(-180deg);
+        }
+    }
+    
+    .team-acco__content{
+        display: block;
+    }
+}
