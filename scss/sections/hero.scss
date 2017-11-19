@@ -6,11 +6,11 @@
     position: relative;
 
     .header{
-        width: 100%;
+        // width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 10px;
+        padding-top: rem(10px);
 
         .header__logo{
             margin-right: auto;
@@ -18,6 +18,11 @@
 
         .header-nav{
             margin-right: rem(15px);
+            display: flex;
+
+            @include tablets{
+                display: none;
+            }
 
             .header-nav__list{
                 margin: 0;
@@ -31,8 +36,8 @@
                         display: inline-block;
                         vertical-align: middle;
                         content: " ";
-                        @include circle(5px, #fff);
-                        margin: 0 12px;
+                        @include circle(rem(5px), #fff);
+                        margin: 0 rem(12px);
                     }
                     &:last-child:after {
                         display: none;
@@ -40,7 +45,7 @@
 
                     .header-nav__link{
                         color: #ffffff;
-                        font-size: 13px;
+                        font-size: rem(13px);
                         font-weight: 500;
                         line-height: 1.42;
                         text-transform: uppercase;
@@ -58,19 +63,44 @@
 
         .header__btn-order-link{
             min-width: rem(98px);
-            padding: 10px 17px;
-            border-radius: 5px;
+            padding: rem(10px) rem(17px);
+            border-radius: rem(5px);
             background-color: $orange;
             color: #fff;
             text-decoration: none;
-            font-size: 13px;
+            font-size: rem(13px);
             font-weight: 500;
             line-height: 1.42;
             text-transform: uppercase;
             transition: 0.5s;
+            margin-right: rem(30px);
             &:hover{
                 background-color: darken($orange, 7%);
             }
+        }
+
+        .header-nav__ham{
+            width: rem(25px);
+            height: rem(30px);
+            display: none;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-right: 3%;
+
+            @include tablets{
+                display: flex;
+            }
+        }
+
+        .header-nav__ham-line-1,
+        .header-nav__ham-line-2,
+        .header-nav__ham-line-3{
+            width: rem(25px);
+            height: rem(6px);
+            border-radius: rem(2px);
+            background-color: #fff;
+            cursor: pointer;
+            margin-bottom: rem(5px);
         }
     }
 
@@ -83,8 +113,17 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        margin-top: -230px;
-        margin-left: -420px;
+        margin-top: rem(-230px);
+        margin-left: rem(-420px);
+
+        @include tablets{
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+        }
+        @include phones{
+            padding: 0;
+        }
 
         .hero__description {
             flex-direction: column;
@@ -94,31 +133,36 @@
             .hero__title {
                 color: #f9b43b;
                 font-family: 'gagalinregular';
-                font-size: 72px;
+                font-size: rem(72px);
                 line-height: 1.42;
                 margin: 0;
-                padding-top: 60px;
+                padding-top: rem(60px);
+                
+                @include tablets{
+                    padding: 0;
+                }
             }
 
             .hero__text {
                 color: #ffffff;
                 font-family: 'lifehackmedium';
-                font-size: 65px;
+                font-size: rem(65px);
                 line-height: 1;
-                width: 460px;
+                width: rem(460px);
             }
         }
     }
 
     .hero__triangle{
-        width: 20px;
-        height: 20px;
+        width: rem(20px);
+        height: rem(20px);
         transform: rotate(45deg);
-        border-bottom: 2px solid white;
-        border-right: 2px solid white;
-        border-bottom-right-radius: 5px;
+        border-bottom: rem(2px) solid white;
+        border-right: rem(2px) solid white;
+        border-bottom-right-radius: rem(5px);
         position: absolute;
         top: 90%;
+        left: 50%;
         cursor: pointer;
     }
 }

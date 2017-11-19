@@ -11,21 +11,35 @@
     right: 0;
     width: 50%;
     background: rgba(#2e3133, 0.7);
-    padding-left: 70px;
-    display: flex;
-    flex-direction: column;
-    padding-top: 90px;
+    padding-left: rem(70px);
+    padding-top: rem(90px);
+
+    @include tablets{
+        left: 0;
+    }
 }
 
 .team__title{
+    display: flex;
     color: $yellow;
-    font-size: 72px;
+    font-size: rem(72px);
     font-family: "gagalinregular";
-    margin-bottom: 60px;
+    margin-bottom: rem(60px);
+
+    @include tablets{
+        justify-content: center;
+        font-size: rem(72.06px);
+    }    
 }
 
 .team-acco__item{
-    margin-top: 35px;
+    margin-top: rem(35px);
+    display: flex;
+    flex-direction: column;
+
+    @include tablets{
+        align-items: center;
+    }
 }
 
 .team-acco__trigger{
@@ -33,30 +47,33 @@
     display: flex;
     align-items: baseline;
     text-decoration: none;
-    font-size: 14px;
+    font-size: rem(14px);
     font-family: "gagalinregular";
 
     &::before{
         content: "";
         height: 0;
         width: 0;
-        border: 7px solid transparent;
+        border: rem(7px) solid transparent;
         border-top-color: $yellow;
         border-bottom-width: 0;
-        margin-right: 7px;
+        margin-right: rem(7px);
+    }
+
+    @include tablets{
+        font-size: rem(24.97px);
     }
 }
 
 .team-acco__content{
-    display: flex;
     display: none;
-    padding-top: 19px;
-    padding-left: 19px;
+    padding-top: rem(19px);
+    padding-left: rem(19px);
 }
 
 .team-acco__pic{
-    height: 100px;
-    width: 100px;
+    height: rem(100px);
+    width: rem(100px);
 }
 
 .team-acco__pic-img{
@@ -65,16 +82,22 @@
 
 .team-acco__text{
     color: #fff;
-    margin-left: 10px;
+    margin-left: rem(10px);
+
+    @include tablets{
+        text-align: center;
+        margin-top: rem(20px);
+        margin-top: rem(14.06px);
+    }
 }
 
 .team-acco__text-title{
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 900;
 }
 
 .team-acco__text-content{
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
 }
 
@@ -89,5 +112,10 @@
     
     .team-acco__content{
         display: flex;
+
+        @include tablets{
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }

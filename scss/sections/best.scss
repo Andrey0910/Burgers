@@ -12,10 +12,10 @@
     align-items: center;
 
     .best__title{
-        font-size: 72px;
-        line-height: 64px;
+        font-size: rem(72px);
+        line-height: rem(64px);
         font-family: 'gagalin';
-        padding-top: 80px;
+        padding-top: rem(80px);
         margin: 0 auto;
         text-align: center;
         color: #2f3234;
@@ -24,7 +24,8 @@
     .best__content{
         display: flex;
         flex-direction: row;
-        margin-top: 90px;
+        justify-content: center;
+        margin-top: rem(90px);
 
         .best__item{
             width: rem(300px);
@@ -32,41 +33,41 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
-            margin-left: 40px;
+            margin-left: rem(40px);
 
             .best__img{
                 align-self: center;
-                margin-bottom: 29px;
+                margin-bottom: rem(29px);
             }
 
             .best__img-meat{
-                width: 97px;
-                height: 89px;
+                width: rem(97px);
+                height: rem(89px);
                 background: url("../img/content/meat.png") center center no-repeat;
             }
 
             .best__img-hand{
-                width: 73px;
-                height: 85px;
+                width: rem(73px);
+                height: rem(85px);
                 background: url("../img/content/hand.png") center center no-repeat;
             }
 
             .best__img-natural{
-                width: 88px;
-                height: 75px;
+                width: rem(88px);
+                height: rem(75px);
                 background: url("../img/content/natural.png") center center no-repeat;
             }
 
             span{
                 font-family: "lifehackmedium";
-                font-size: 24.1px;
+                font-size: rem(24.1px);
                 text-align: center;
             }
 
             p{
                 font-family: "ubuntulight";
                 font-weight: 300;
-                font-size: 14px;
+                font-size: rem(14px);
                 text-align: center;
             }
         }

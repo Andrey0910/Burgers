@@ -8,23 +8,22 @@
 
 .maincontent{
     height: 100%;
-    min-height: 650px;
+    min-height: rem(650px);
 }
 
 .conteiner{
-    width: 940px;
+    width: 95%;
+    min-width: rem(940px);
     margin: 0 auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 
 .section{
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.31);
-    min-width: 940px;
-    min-height: 650px;
+    min-width: rem(940px);
+    min-height: rem(650px);
 }
 
 .nav{
@@ -37,10 +36,10 @@
 }
 
 .nav__item{
-    width: 17px;
-    height: 17px;
+    width: rem(17px);
+    height: rem(17px);
 
-    margin-top: 17px;
+    margin-top: rem(17px);
     
-    @include circle(6px, #fff);
+    @include circle(rem(6px), #fff);
 }

@@ -1,18 +1,3 @@
-// .menu{
-//     background: url("../img/bg/menu-bg.jpg") center center no-repeat;
-//     background-size: cover;
-//     position: relative;
-// }
-
-// .menu__title{
-//     color: #fff;
-//     font-size: 72px;
-//     font-family: "gagalinregular";
-//     position: absolute;
-//     top: 110px;
-//     left: 90px;
-// }
-
 .menu {
     background: url("../img/bg/menu-bg.jpg") center center no-repeat;
     background-size: cover;
@@ -26,19 +11,12 @@
 
 .menu__title {
     color: #fff;
-    font-size: 72px;
+    font-size: rem(72px);
     font-family: "gagalinregular";
     position: absolute;
     top: 10%;
     left: 10%;
 }
-
-// .section__title {
-//     color: #f9b43b;
-//     font-size: 4.5rem;
-//     font-family: Gagalin-Regular,Helvetica,sans-serif;
-//     margin-bottom: .75rem;
-// }
 
 .menu-acco {
     position: absolute;
@@ -47,12 +25,6 @@
     right: 0;
     background: rgba(#2e3133, 0.7);
 }
-
-// .menu-acco:after,
-// .menu-acco:before {
-//     content: "";
-//     display: table
-// }
 
 .menu-acco{
     &:after, &:before{
@@ -71,7 +43,6 @@
 }
 
 .menu-acco__trigger {
-    // border: 2px solid green;
     width: 5rem;
     display: block;
     height: 100%;
@@ -93,7 +64,6 @@
     transform-origin: 0 0;
     left: 50%;
     top: 50%;
-    // margin-top: -1.25rem;
 
 }
 

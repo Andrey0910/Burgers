@@ -7,10 +7,10 @@
 
 .order__title{
     color: $yellow;
-    font-size: 72px;
+    font-size: rem(72px);
     font-family: "gagalinregular";
-    margin-top: 90px;
-    margin-bottom: 70px;
+    margin-top: rem(90px);
+    margin-bottom: rem(70px);
     display: flex;
     justify-content: center;
 }
@@ -23,11 +23,20 @@
 .form__elem{
     display: flex;
     flex-direction: row;
+
+    @include tablets{
+        flex-direction: column;
+    }
 }
 
 .form__content{
     width: 50%;
     margin-right: rem(20px);
+
+    @include tablets{
+        width: 100%;
+        padding: 0 20%;
+    }
 }
 
 .form__block-title{
@@ -69,7 +78,7 @@
 .form__check{
     position: absolute;
     top: 0;
-    left: -3000px;
+    left: rem(-3000px);
 }
 
 .form__radio-styled{
@@ -118,8 +127,8 @@
     width: rem(6px);
     height: rem(12px);
     transform: rotate(45deg);
-    border-bottom: 3px solid red;
-    border-right: 3px solid red;
+    border-bottom: rem(3px) solid red;
+    border-right: rem(3px) solid red;
     display: none;
 }
 
@@ -129,12 +138,12 @@
 
 .order__btn-order-link{
     min-width: rem(98px);
-    padding: 10px 17px;
-    border-radius: 5px;
+    padding: rem(10px) rem(17px);
+    border-radius: rem(5px);
     background-color: $orange;
     color: #fff;
     text-decoration: none;
-    font-size: 13px;
+    font-size: rem(13px);
     font-weight: 500;
     line-height: 1.42;
     text-transform: uppercase;
@@ -153,7 +162,7 @@
 .order__btn-clear-link{
     color: #fff;
     text-decoration: none;
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
     line-height: 1.42;
     margin-left: rem(20px);
