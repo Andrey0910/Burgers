@@ -120,9 +120,13 @@
             flex-direction: column;
             width: 100%;
             text-align: center;
+            margin-top: rem(-430px);
+            margin-left: rem(-520px);
         }
         @include phones{
             padding: 0;
+            margin-top: rem(-430px);
+            margin-left: rem(-820px);
         }
 
         .hero__description {

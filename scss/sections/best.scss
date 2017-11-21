@@ -27,6 +27,10 @@
         justify-content: center;
         margin-top: rem(90px);
 
+        @include phones{
+            flex-direction: column;
+        }
+
         .best__item{
             width: rem(300px);
             display: flex;
@@ -35,26 +39,39 @@
             align-items: center;
             margin-left: rem(40px);
 
+            @include phones{
+                flex-direction: row;
+                width: 100%;
+            }
+
             .best__img{
                 align-self: center;
                 margin-bottom: rem(29px);
+                width: rem(120px);
+                height: rem(120px);
+            }
+
+            .best__item-content{
+                display: flex;
+                flex-direction: column;
+
+                @include phones{
+                    align-items: flex-start;
+                    width: 80%;
+                    margin-left: rem(30px);
+                }
             }
 
             .best__img-meat{
-                width: rem(97px);
-                height: rem(89px);
                 background: url("../img/content/meat.png") center center no-repeat;
             }
 
             .best__img-hand{
-                width: rem(73px);
-                height: rem(85px);
+              
                 background: url("../img/content/hand.png") center center no-repeat;
             }
 
             .best__img-natural{
-                width: rem(88px);
-                height: rem(75px);
                 background: url("../img/content/natural.png") center center no-repeat;
             }
 
@@ -69,6 +86,10 @@
                 font-weight: 300;
                 font-size: rem(14px);
                 text-align: center;
+
+                @include phones{
+                    text-align: left;
+                }
             }
         }
     }

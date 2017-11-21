@@ -50,13 +50,22 @@
     font-family: 'gagalin';
     text-transform: uppercase;
     margin: rem(50px) 0 rem(20px) rem(20px);
+
+    @include phones{
+        font-size: rem(18px);
+    }
 }
 
 .comments__info-text{
+    display: flex;
     font-size: rem(14px);
     font-weight: 300;
     line-height: rem(24px);
     margin: 0 rem(30px) rem(20px) rem(20px);
+
+    @include phones{
+        display: none;
+    }
 }
 
 .comments__info-btn-more{
