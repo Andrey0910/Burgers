@@ -42,6 +42,7 @@
             @include phones{
                 flex-direction: row;
                 width: 100%;
+                margin-left: 0;
             }
 
             .best__img{

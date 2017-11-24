@@ -86,6 +86,14 @@
     width: rem(500px);
     overflow: hidden;
     display: none;
+
+    @include tablets{
+        width: 50%;
+    }
+
+    @include phones{
+        width: 50%;
+    }
 }
 
 .menu-acco__text {

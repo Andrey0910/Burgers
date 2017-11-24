@@ -52,7 +52,8 @@
     margin: rem(50px) 0 rem(20px) rem(20px);
 
     @include phones{
-        font-size: rem(18px);
+        font-size: rem(24px);
+        margin: rem(80px) 0 rem(20px) rem(20px);
     }
 }
 
@@ -69,6 +70,7 @@
 }
 
 .comments__info-btn-more{
+    display: flex;
     width: rem(110px);
     height: rem(35px);
     font-size: rem(13px);
@@ -78,6 +80,29 @@
     border-radius: rem(4px);
     background-color: #2f3234;
     margin-left: rem(20px);
-    text-align: center;
+    justify-content: center;
     cursor: pointer;
+
+    @include phones{
+        display: none;
+    }
+}
+
+.comments__info__btn-order{
+    width: rem(150px);
+    height: rem(35px);
+    font-size: rem(13px);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: rem(35px);
+    border-radius: rem(4px);
+    background-color: #2f3234;
+    margin-left: rem(20px);
+    cursor: pointer;
+    display: none;
+
+    @include phones{
+        display: flex;
+        justify-content: center;
+    }
 }
