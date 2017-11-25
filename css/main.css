@@ -486,7 +486,8 @@ h6 {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   height: 100%;
-  color: wheat; }
+  color: wheat;
+  width: 100%; }
 
 .comments__item {
   width: 25%;
