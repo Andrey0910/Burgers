@@ -12,10 +12,10 @@
     align-items: center;
 
     .best__title{
-        font-size: 72px;
-        line-height: 64px;
+        font-size: rem(72px);
+        line-height: rem(64px);
         font-family: 'gagalin';
-        padding-top: 80px;
+        padding-top: rem(80px);
         margin: 0 auto;
         text-align: center;
         color: #2f3234;
@@ -24,7 +24,12 @@
     .best__content{
         display: flex;
         flex-direction: row;
-        margin-top: 90px;
+        justify-content: center;
+        margin-top: rem(90px);
+
+        @include phones{
+            flex-direction: column;
+        }
 
         .best__item{
             width: rem(300px);
@@ -32,42 +37,60 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
-            margin-left: 40px;
+            margin-left: rem(40px);
+
+            @include phones{
+                flex-direction: row;
+                width: 100%;
+                margin-left: 0;
+            }
 
             .best__img{
                 align-self: center;
-                margin-bottom: 29px;
+                margin-bottom: rem(29px);
+                width: rem(120px);
+                height: rem(120px);
             }
 
-            .best__img_meat{
-                width: 97px;
-                height: 89px;
+            .best__item-content{
+                display: flex;
+                flex-direction: column;
+
+                @include phones{
+                    align-items: flex-start;
+                    width: 80%;
+                    margin-left: rem(30px);
+                }
+            }
+
+            .best__img-meat{
                 background: url("../img/content/meat.png") center center no-repeat;
             }
 
-            .best__img_hand{
-                width: 73px;
-                height: 85px;
+            .best__img-hand{
+              
                 background: url("../img/content/hand.png") center center no-repeat;
             }
 
-            .best__img_natural{
-                width: 88px;
-                height: 75px;
+            .best__img-natural{
                 background: url("../img/content/natural.png") center center no-repeat;
             }
 
             span{
                 font-family: "lifehackmedium";
-                font-size: 24.1px;
+                font-size: rem(24.1px);
                 text-align: center;
             }
 
             p{
                 font-family: "ubuntulight";
                 font-weight: 300;
-                font-size: 14px;
+                font-size: rem(14px);
                 text-align: center;
+
+                @include phones{
+                    text-align: left;
+                }
             }
         }
     }

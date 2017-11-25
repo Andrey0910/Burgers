@@ -1,0 +1,113 @@
+.menu {
+    background: url("../img/bg/menu-bg.jpg") center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    min-height: 30rem;
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    overflow: hidden;
+}
+
+.menu__title {
+    color: #fff;
+    font-size: rem(72px);
+    font-family: "gagalinregular";
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.menu-acco {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(#2e3133, 0.7);
+}
+
+.menu-acco{
+    &:after, &:before{
+        content: "";
+        display: table
+    }
+}
+
+ .menu-acco:after {
+    clear: both;
+} 
+
+.menu-acco__item {
+    float: left;
+    height: 100%;
+}
+
+.menu-acco__trigger {
+    width: 5rem;
+    display: block;
+    height: 100%;
+    float: left;
+    text-decoration: none;
+    position: relative;
+    color: white;
+}
+
+.menu-acco__trigger-text {
+    font-size: 2.5rem;
+    font-family: "gagalinregular";
+    text-align: center;
+    white-space: nowrap;
+    position: absolute;
+    -webkit-transform: rotate(-90deg) translateY(-50%);
+    transform: rotate(-90deg) translateY(-50%);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    left: 50%;
+    top: 50%;
+
+}
+
+.menu-acco__trigger-text-meat{
+    margin-top: rem(133px);
+}
+
+.menu-acco__trigger-text-vegetarian{
+    margin-top: rem(147px);
+}
+
+.menu-acco__trigger-text-dietary{
+    margin-top: rem(120px);
+}
+
+.menu-acco__content {
+    height: 100%;
+    float: left;
+    background: rgba(47,50,52,.93);
+    width: rem(500px);
+    overflow: hidden;
+    display: none;
+
+    @include tablets{
+        width: 50%;
+    }
+
+    @include phones{
+        width: 50%;
+    }
+}
+
+.menu-acco__text {
+    font-family: Ubuntu,Helvetica,sans-serif;
+    font-weight: 300;
+    font-size: .875rem;
+    color: #fff;
+    padding: 3.75rem 1.875rem;
+    width: 100%;
+    line-height: 1.8;
+}
+
+.menu-acco__item_activ{
+    .menu-acco__content{
+        display: block;
+    }
+}

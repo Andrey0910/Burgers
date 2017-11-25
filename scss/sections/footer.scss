@@ -1,0 +1,130 @@
+.footer{
+    width: 100%;
+    height: rem(60px);
+    background-color: black;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin-top: rem(-60px);
+    
+    @include phones{
+        height: rem(115px);
+        margin-top: rem(-115px);
+    }
+}
+
+.footer__conteiner{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: initial;
+
+    @include phones{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.footer__content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: initial;
+
+    @include phones{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.footer__contacts{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: rem(8px);
+
+    @include phones{
+        width: 100%;
+        align-items: center;
+        margin-top: 0;
+    }
+}
+
+// .footer__socials{
+//     width: 50%;
+//     display: flex;
+//     flex-direction: row;
+//     align-items: flex-end;
+
+//     @include phones{
+//         width: 100%;
+//         align-items: center;
+//     }
+// }
+
+.footer__socials{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    @include phones{
+        width: 100%;
+        justify-content: center;
+        margin-top: rem(15px);
+    }
+}
+
+.footer__socials-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-left: rem(20px);
+    fill: #595959;
+    width: rem(25px);
+    height: rem(25px);
+    &:hover {
+    fill: #ffffff;
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+.footer__contacts-addres{
+    color: #fff;
+    font-size: rem(14px);
+    font-weight: 300;
+    margin-bottom: rem(6px);
+
+    @include phones{
+        margin-top: rem(3px);
+    }
+}
+
+.footer__contacts-tel{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.footer__contacts-tel-img{
+    display: flex;
+    width: rem(12px);
+    height: rem(11px);
+    background: url("./../img/content/phone.png") center center no-repeat;
+}
+
+.footer__contacts-tel-number{
+    color: $orange;
+    font-size: rem(14px);
+    font-weight: 900;
+    text-decoration: none;
+    margin-left: rem(10px);
+    display: flex;
+}
